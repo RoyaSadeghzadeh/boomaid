@@ -3,7 +3,7 @@ import { ArrowLight } from "@/components/icons";
 import { COUNTRIES } from "@/lib/countries";
 import { Listbox, Transition } from "@headlessui/react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import TextInput from "./TextInput";
 import { Controller } from "react-hook-form";
 

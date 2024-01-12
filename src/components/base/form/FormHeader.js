@@ -3,7 +3,6 @@ import { Disclosure, Transition } from "@headlessui/react";
 import React from "react";
 
 const FormHeader = ({ children, title, step, status = "" }) => {
-  console.log('ssssssss',step,status)
   const circleBackground =
     status === "active"
       ? "bg-Boomaid/yellow shadow-Boomaid/yellow"

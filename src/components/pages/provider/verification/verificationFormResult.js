@@ -78,14 +78,10 @@ const VerificationFormResult = ({ data }) => {
       currentNationality: data["currentNationality"].value,
     };
 
-    console.log("formData", formData);
   };
 
   return (
     <div>
-      {
-        console.log('ddddddd',data)
-      }
       <Box>
         <FormLable required={false}>Principal Business Address</FormLable>
         <Box className="!py-0 grid grid-cols-2 gap-3">
