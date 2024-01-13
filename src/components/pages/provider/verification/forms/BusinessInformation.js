@@ -61,6 +61,7 @@ const BusinessInformation = ({
   };
 
   useEffect(() => {
+    console.log("error",errors)
     if (Object.keys(errors).length > 0) {
       handleChangeStepStatus("1", "error");
     }
@@ -68,6 +69,7 @@ const BusinessInformation = ({
 
   return (
     <div className="flex gap-4">
+      {console.log("ddddddd", watch)}
       <FormHeader
         title="Your Business Information"
         step="1"
