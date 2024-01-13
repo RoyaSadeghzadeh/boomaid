@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+        <Header/>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Link
           className=" bg-Boomaid/yellow rounded-md text-white py-4 px-6"

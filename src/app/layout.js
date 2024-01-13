@@ -15,7 +15,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header ecommerceMenu={ecommerceMenu} />
+        {/* <Header ecommerceMenu={ecommerceMenu} /> */}
         {children}
       </body>
     </html>
