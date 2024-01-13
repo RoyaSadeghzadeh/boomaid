@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/layout/main/Header";
-import { getEcommerceMenu } from "./api/menu";
+import { getEcommerceMenu } from "./api/route";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Header ecommerceMenu={ecommerceMenu} /> */}
+        <Header ecommerceMenu={ecommerceMenu} />
         {children}
       </body>
     </html>
