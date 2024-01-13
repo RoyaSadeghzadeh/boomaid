@@ -70,7 +70,6 @@ const BankAccountDetail = ({
     if (Object.keys(errors).length > 0) {
       handleChangeStepStatus("3", "error");
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [errors]);
 
   const selectedInputs =

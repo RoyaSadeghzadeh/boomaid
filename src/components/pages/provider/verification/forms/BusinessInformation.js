@@ -11,7 +11,7 @@ import {
   Button,
 } from "@/components";
 import { COUNTRIES } from "@/lib/countries";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const BusinessInformation = ({
   control,
@@ -64,7 +64,6 @@ const BusinessInformation = ({
     if (Object.keys(errors).length > 0) {
       handleChangeStepStatus("1", "error");
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [errors]);
 
   return (

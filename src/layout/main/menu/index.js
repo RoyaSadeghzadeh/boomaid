@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Ecommerce from "./Ecommerce";
 import { Box } from "@/components";
 
-const Menu = ({ ecommerceMenu }) => {
+const index = ({ ecommerceMenu }) => {
   const [selectedMenuItem, setSelectedMenuItem] = useState(null);
   const handleClose = () => {
     setSelectedMenuItem(null);
@@ -48,4 +48,4 @@ const Menu = ({ ecommerceMenu }) => {
   );
 };
 
-export default Menu;
+export default index;
