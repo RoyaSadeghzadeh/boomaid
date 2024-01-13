@@ -1,3 +1,4 @@
+'use client'
 import { Controller } from "react-hook-form";
 
 export default function Radio({

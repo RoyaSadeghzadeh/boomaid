@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Paragraph from "../text/Paragraph";
 import { Controller } from "react-hook-form";

@@ -1,3 +1,4 @@
+'use client'
 import { Add } from "@/components/icons";
 import React from "react";
 import Paragraph from "../text/Paragraph";

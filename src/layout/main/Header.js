@@ -9,6 +9,7 @@ export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
 
 const Header = async ({}) => {
+  
   const ecommerceMenu = await getEcommerceMenu();
 
   return (
