@@ -1,11 +1,16 @@
-'use client'
 import React from "react";
 import { Box, Button } from "@/components";
 import { Logo } from "@/components/icons";
 import CountrySelect from "@/components/base/input/CountrySelect";
 import Menu from "./menu";
+import { getEcommerceMenu } from "@/app/api/route";
 
-const Header = ({ ecommerceMenu }) => {
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
+const Header = async ({}) => {
+  const ecommerceMenu = await getEcommerceMenu();
+
   return (
     <Box className="bg-Light h-20 shadow-Header !py-0 flex items-center justify-center">
       <Box className="!py-0 container flex items-center justify-between max-w-[1230px] relative">
