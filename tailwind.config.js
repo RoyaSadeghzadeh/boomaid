@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -14,8 +15,12 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        "Primary/01": "#22315E",
         "Primary/03": "#39519C",
+        "Primary/04": "#4462BB",
         "Primary/05": "#637CC7",
+        "Secondary/02": "#DB1B3B",
+        "Secondary/03": "#E6314F",
         "Neutral/01": "#000000",
         "Neutral/02": "#393939",
         "Neutral/03": "#555555",
@@ -25,6 +30,7 @@ module.exports = {
         "Boomaid/yellow": "#FAB446",
         "Alert/red": "#FF0000",
         Green: "#0F8731",
+        Light: "rgba(255, 255, 255, 0.60)",
         "Input-active-color": "#3874FF",
       },
       boxShadow: {
@@ -35,6 +41,8 @@ module.exports = {
         Red: "0px 0px 15px 0px rgba(255, 0, 0, 0.40)",
         "Input-active-color":
           "0px 0px 9px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 2px rgba(38, 132, 255, 0.20)",
+        Menu: "1px 3px 29px 0px rgba(0, 0, 0, 0.18)",
+        Header: "0px 0px 28px 0px rgba(0, 0, 0, 0.15)",
       },
     },
   },

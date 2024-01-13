@@ -11,7 +11,7 @@ import {
   Button,
 } from "@/components";
 import { COUNTRIES } from "@/lib/countries";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const BusinessInformation = ({
   control,
@@ -61,15 +61,14 @@ const BusinessInformation = ({
   };
 
   useEffect(() => {
-    console.log("error",errors)
     if (Object.keys(errors).length > 0) {
       handleChangeStepStatus("1", "error");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [errors]);
 
   return (
     <div className="flex gap-4">
-      {console.log("ddddddd", watch)}
       <FormHeader
         title="Your Business Information"
         step="1"
