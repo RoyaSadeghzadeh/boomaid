@@ -6,7 +6,7 @@ import {
 } from "@/components/pages/provider/verification/forms";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from "yup";
 import { useRouter } from "next/navigation";
 import { COUNTRIES } from "@/lib/countries";

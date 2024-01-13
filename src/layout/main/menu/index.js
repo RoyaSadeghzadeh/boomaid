@@ -30,9 +30,6 @@ const Menu = ({ ecommerceMenu }) => {
 
   return (
     <Box className="flex flex-col">
-      {
-        console.log('eeeeeee',ecommerceMenu)
-      }
       <ul className="flex items-center gap-8 text-Neutral/03 text-sm cursor-pointer">
         {menuItems.map((item, index) => (
           <li

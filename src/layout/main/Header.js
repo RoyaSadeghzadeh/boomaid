@@ -1,13 +1,11 @@
-import { getEcommerceMenu } from "@/app/api/menu";
+'use client'
 import React from "react";
 import { Box, Button } from "@/components";
 import { Logo } from "@/components/icons";
 import CountrySelect from "@/components/base/input/CountrySelect";
 import Menu from "./menu";
 
-const Header = async () => {
-  const ecommerceMenu = await getEcommerceMenu();
-
+const Header = ({ ecommerceMenu }) => {
   return (
     <Box className="bg-Light h-20 shadow-Header !py-0 flex items-center justify-center">
       <Box className="!py-0 container flex items-center justify-between max-w-[1230px] relative">
