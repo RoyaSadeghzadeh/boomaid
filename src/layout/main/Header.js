@@ -13,8 +13,8 @@ const Header = async ({}) => {
   const ecommerceMenu = await getEcommerceMenu();
 
   return (
-    <Box className="bg-Light h-20 shadow-Header !py-0 flex items-center justify-center">
-      <Box className="!py-0 container flex items-center justify-between max-w-[1230px] relative">
+    <Box className="bg-Light h-20 shadow-Header !py-0 flex items-center justify-center relative">
+      <Box className="!py-0 container flex items-center justify-between max-w-[1230px]">
         <Logo className="" />
         <Menu ecommerceMenu={ecommerceMenu} />
         <Box className="flex gap-3">
