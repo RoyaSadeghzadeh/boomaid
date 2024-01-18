@@ -35,7 +35,7 @@ const MobileMenu = ({ ecommerceMenu, open }) => {
   ];
 
   return (
-    <Box className={`fixed h-[calc(100vh-5rem)] w-full top-[5rem] overflow-auto delay-150 transition-all bg-white !p-4 ${open ? "opacity-100 block" : "opacity-0 hidden"}`}>
+    <Box className={`fixed h-[calc(100vh-5rem)] w-full top-[5rem] overflow-auto delay-150 transition-all bg-white z-[999] !p-4 ${open ? "opacity-100 block" : "opacity-0 hidden"}`}>
       {selectedMenuItem ? (
         <>{selectedMenuItem.component}</>
       ) : (
