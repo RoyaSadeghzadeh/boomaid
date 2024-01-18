@@ -16,7 +16,7 @@ const CountrySelect = ({ selectedCountry }) => {
             src={`https://purecatamphetamine.github.io/country-flag-icons/3x2/${selectedCountry.value}.svg`}
           />
           <span className="text-sm text-Black/2">
-            {selectedCountry.dial_code}
+            {selectedCountry.value}
           </span>
         </div>
         <Arrow />

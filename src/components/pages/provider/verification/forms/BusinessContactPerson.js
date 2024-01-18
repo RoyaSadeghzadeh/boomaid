@@ -133,7 +133,7 @@ const BusinessContactPerson = ({
         status={formStepsStatus["2"]}>
         <Box>
           <FormLable>Authorized Person Information</FormLable>
-          <Box className="grid grid-cols-3 gap-4 !py-0">
+          <Box className="grid grid-cols-1 sm:grid-cols-3 gap-4 !py-0">
             {personInformationInputs.map((input, index) => (
               <React.Fragment key={index}>
                 <TextInput
@@ -156,7 +156,7 @@ const BusinessContactPerson = ({
                   control={control}
                   name={input.name}
                   options={input.options}
-                  className="!w-28"
+                  className="md:!w-28"
                   title={input.title}
                   value={watch(input.name)}
                 />
@@ -167,7 +167,7 @@ const BusinessContactPerson = ({
 
         <Box>
           <FormLable>Principal Business Address</FormLable>
-          <Box className="grid grid-cols-2 gap-4 !py-0">
+          <Box className="grid grid-cols-1 sm:grid-cols-2 gap-4 !py-0">
             {contactAddressInputs.map((input, index) => (
               <React.Fragment key={index}>
                 {input.type === "select" ? (
@@ -192,7 +192,7 @@ const BusinessContactPerson = ({
 
         <Box>
           <FormLable>Nationality</FormLable>
-          <Box className="grid grid-cols-2 gap-4 !py-0">
+          <Box className="grid grid-cols-1 sm:grid-cols-2 gap-4 !py-0">
             {nationalityInputs.map((input, index) => (
               <React.Fragment key={index}>
                 <SelectBox
@@ -208,7 +208,7 @@ const BusinessContactPerson = ({
 
         <Box>
           <FormLable>Identity Proof</FormLable>
-          <Box className="grid grid-cols-2 gap-4 !py-0">
+          <Box className="grid grid-cols-1 sm:grid-cols-2 gap-4 !py-0">
             <TextInput
               control={control}
               name="identityProof"
@@ -246,10 +246,10 @@ const BusinessContactPerson = ({
         </Box>
 
         <Box className="flex justify-end gap-2">
-          <Button className="!w-24 block" variant="primary-bordered">
+          <Button className="w-6/12 md:!w-24 block" variant="primary-bordered">
             Back
           </Button>
-          <Button onClick={handleNextStep} className="!w-24 block">
+          <Button onClick={handleNextStep} className="w-6/12 md:!w-24 block">
             Next
           </Button>
         </Box>

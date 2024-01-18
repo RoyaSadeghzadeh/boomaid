@@ -17,7 +17,7 @@ const TextInput = ({
       <Controller
         render={({ field, fieldState: { error } }) => (
           <div
-            className={`bg-white shadow-Gray h-11 rounded-[4px] flex items-center py-5 px-4 min-w-[322px] ${className} ${
+            className={`bg-white shadow-Gray h-11 rounded-[4px] flex items-center py-5 px-4 md:min-w-[322px] ${className} ${
               error ? "border border-Alert/red" : ""
             }`}>
             <input

@@ -25,20 +25,23 @@ const FormHeader = ({ children, title, step, status = "" }) => {
     <div
       className={`w-full  min-h-20 relative ${
         step !== "3"
-          ? `before:content-[''] before:absolute before:h-full before:w-[2px] ${lineBackground} before:-z-10 before:top-5 before:left-[22px]`
+          ? `md:before:content-[''] md:before:absolute md:before:h-full md:before:w-[2px] ${lineBackground} md:before:-z-10 md:before:top-5 md:before:left-[22px]`
           : ""
       }`}>
-      <Disclosure defaultOpen={status==="active"} className="w-full">
+      <Disclosure defaultOpen={status === "active"} className="w-full">
         {({ open }) => (
           <>
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col md:flex-row items-center md:gap-8">
               <div
-                className={`flex items-center justify-center font-bold text-white text-xl min-w-[46px] h-[46px] rounded-full ${circleBackground}`}>
-                {step}
+                className={`flex items-center h-32 md:h-auto relative before:content-[''] before:absolute before:w-[2px] ${step > 1 ? "before:h-full" : " before:h-2/4 before:bottom-0"} ${lineBackground} before:-z-10 before:left-[22px]`}>
+                <div
+                  className={`flex items-center justify-center font-bold text-white text-xl min-w-[46px] h-[46px] rounded-full ${circleBackground}`}>
+                  {step}
+                </div>
               </div>
               <Disclosure.Button
                 disabled={status === "deactive"}
-                className={`flex items-center h-14 p-4 rounded-full w-full text-[16px] font-bold text-Neutral/01 bg-Boomaid/yellow`}>
+                className={`flex items-center h-14 p-4 rounded-full w-full text-sm font-bold text-Neutral/01 bg-Boomaid/yellow`}>
                 {title}
               </Disclosure.Button>
             </div>
@@ -49,7 +52,7 @@ const FormHeader = ({ children, title, step, status = "" }) => {
               leave="transition duration-75 ease-out"
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0">
-              <Disclosure.Panel className="pl-20 pb-3">
+              <Disclosure.Panel className="md:pl-20 md:pb-3 ">
                 {children}
               </Disclosure.Panel>
             </Transition>

@@ -144,10 +144,10 @@ const BankAccountDetail = ({
         </Box>
 
         <Box className="flex justify-end gap-2">
-          <Button className="!w-24 block" variant="primary-bordered">
+          <Button className="w-6/12 md:!w-24 block" variant="primary-bordered">
             Back
           </Button>
-          <Button onClick={handleNextStep} className="!w-24 block">
+          <Button onClick={handleNextStep} className="w-6/12 md:!w-24 block">
             Next
           </Button>
         </Box>

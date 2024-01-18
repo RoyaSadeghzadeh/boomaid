@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Ecommerce from "./Ecommerce";
 import { Box } from "@/components";
 
-const Menu = ({ ecommerceMenu }) => {
+const Menu = ({ ecommerceMenu, className }) => {
   const [selectedMenuItem, setSelectedMenuItem] = useState(null);
   const handleClose = () => {
     setSelectedMenuItem(null);
@@ -29,7 +29,7 @@ const Menu = ({ ecommerceMenu }) => {
   ];
 
   return (
-    <Box className="flex flex-col">
+    <Box className={`flex flex-col ${className}`}>
       <ul className="flex items-center gap-8 text-Neutral/03 text-sm cursor-pointer">
         {menuItems.map((item, index) => (
           <li

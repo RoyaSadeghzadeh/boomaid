@@ -9,7 +9,7 @@ const Verification = () => {
   const params = useSearchParams()
 
   return (
-    <div className="container max-w-[1230px] mx-auto py-20">
+    <div className="container max-w-[1230px] mx-auto py-20 px-6 md:px-10">
       {
         params.get('showFormResult') ? (
           <VerificationFormResult data={formData}/>

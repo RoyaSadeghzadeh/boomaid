@@ -19,7 +19,7 @@ const SelectBox = ({
       render={({ field, fieldState: { error } }) => (
         <Listbox
           as="div"
-          className="relative"
+          className="relative flex-1 sm:flex-auto"
           value={value}
           onChange={(data) => field.onChange(data)}>
           {({ open }) => (

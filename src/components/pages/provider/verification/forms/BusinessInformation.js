@@ -83,7 +83,7 @@ const BusinessInformation = ({
 
         <Box>
           <FormLable>Principal Business Address</FormLable>
-          <Box className="grid grid-cols-2 gap-4 !py-0">
+          <Box className="grid grid-cols-1 sm:grid-cols-2 gap-4 !py-0">
             {principalBusinessInputs.map((input, index) => (
               <React.Fragment key={index}>
                 {input.type === "select" ? (
@@ -108,7 +108,7 @@ const BusinessInformation = ({
 
         <Box>
           <FormLable>Business Phone Number</FormLable>
-          <Box className="flex gap-4 !py-0">
+          <Box className="flex flex-col sm:flex-row gap-4 !py-0">
             <PhoneInput selectedCountry={watch("selectedCountryCode")} control={control} name="businessPhoneNumber" />
             <Paragraph className="text-Neutral/05 !text-sm !py-0">
               Enter your phone number which will be shown in your profile. It
@@ -128,7 +128,7 @@ const BusinessInformation = ({
 
         <Box>
           <FormLable>Business Email Address</FormLable>
-          <Box className="flex items-center gap-3 !py-0">
+          <Box className="flex flex-col sm:flex-row sm:items-center gap-3 !py-0">
             <TextInput
               control={control}
               name="businessEmail"
@@ -152,7 +152,7 @@ const BusinessInformation = ({
 
         <Box>
           <FormLable>Tax Identification Number</FormLable>
-          <Box className="flex items-center gap-6 !py-0">
+          <Box className="flex flex-col sm:flex-row sm:items-center gap-6 !py-0">
             <TextInput
               control={control}
               name="tax"
@@ -161,7 +161,7 @@ const BusinessInformation = ({
                   ? "Enter your EIN/SSN/ITIN"
                   : "Enter your tax number"
               }
-              className="!w-8/12"
+              className="sm:!w-8/12"
             />
             <Box className="flex items-center gap-4 !py-0">
               <Radio
@@ -194,7 +194,7 @@ const BusinessInformation = ({
           />
         </Box>
 
-        <Button onClick={handleNextStep} className="w-48 ml-auto block">
+        <Button onClick={handleNextStep} className="w-full md:w-48 sm:ml-auto block">
           Next
         </Button>
       </FormHeader>

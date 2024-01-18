@@ -60,7 +60,7 @@ const PhoneInput = ({ control, name, selectedCountry }) => {
       <TextInput
         control={control}
         name={name}
-        className="min-w-[322px]"
+        className="flex-1 md:flex-auto md:min-w-[322px]"
         placeholder="Enter your business phone number"
       />
     </div>

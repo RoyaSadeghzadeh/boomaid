@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight, RoundedClose } from "@/components/icons";
+import { ArrowNext, RoundedClose } from "@/components/icons";
 import { useOutsideAlerter } from "@/hocs";
 import React, { useState } from "react";
 
@@ -33,7 +33,7 @@ const Ecommerce = ({ data, handleClose }) => {
         <div className="flex items-center justify-between py-2 mx-6 border-b border-Neutral/03 text-Primary/04 font-[500] cursor-pointer">
           <div className="flex items-center gap-3 text-[12px]">
             <span>Go to {selectedMenu.title} Page</span>
-            <ArrowRight />
+            <ArrowNext />
           </div>
         </div>
         <div className="flex-1 flex flex-col flex-wrap gap-2 pt-3 px-6 overflow-auto">

@@ -32,6 +32,7 @@ module.exports = {
         Green: "#0F8731",
         Light: "rgba(255, 255, 255, 0.60)",
         "Input-active-color": "#3874FF",
+        // Gray: "#fbfbfb",
       },
       boxShadow: {
         Gray: "0px 0px 9px 0px rgba(0, 0, 0, 0.15)",
